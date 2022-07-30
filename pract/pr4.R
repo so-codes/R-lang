@@ -61,16 +61,18 @@ name <- c("Kurizu", "Bob", "Jane", "Pocky")
 age <- c(18,20,19,17)
 weight <- c(55,54,57,56)
 
+df <- data.frame(name,age,weight)
+
 # 1
-summary(name)
-summary(age)
-summary(weight)
+summary(df$name)
+summary(df$age)
+summary(df$weight)
 
 # 2
-median(age)
+median(df$age)
 
 # 3
-quantile(weight,c(.92))
+quantile(df$weight,c(.92))
 
 # 4
-boxplot(age)
+boxplot(df$age)
