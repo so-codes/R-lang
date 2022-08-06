@@ -1,7 +1,6 @@
 #Q1
-View(airquality)
-
-data1 <- 
+View(iris)
+data1 <- iris
   
 hist1 <- hist(iris$Sepal.Length, main="Histogram for sepal length", col="green")
 hist2 <- hist(iris$Sepal.Width, main="Histogram for sepal width", col="green")
