@@ -1,0 +1,4 @@
+name|marks
+kurizu|5
+pocky|10
+syeca|7
