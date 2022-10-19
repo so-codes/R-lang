@@ -7,7 +7,7 @@ hist2 <- hist(iris$Sepal.Width, main="Histogram for sepal width", col="green")
 hist3 <- hist(iris$Petal.Length ,xlab = "Length", ylab = "Plot", main="Histogram for Petal length", col="blue")
 hist4 <- hist(iris$Petal.Width ,border = "red", xlab = "Width", ylab = "Plot", main="Histogram for Petal Width", col="blue")
 
-hist(data1$Petal.Length, breaks=5)
+hist(data1$Petal.Length, breaks=5, col = "green", border = "red")
 hist(data1$Petal.Length, breaks=10)
 
 #Q2
@@ -15,7 +15,7 @@ install.packages('readxl')
 library(readxl)
 
 #1
-df1 <- read.csv("products.txt", header = TRUE, sep="|")
+df1 <- read.csv(file.choose(), header = TRUE, sep="|")
 View(df1)
 
 #2

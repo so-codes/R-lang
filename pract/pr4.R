@@ -62,6 +62,7 @@ age <- c(18,20,19,17)
 weight <- c(55,54,57,56)
 
 df <- data.frame(name,age,weight)
+View(df)
 
 # 1
 summary(df$name)

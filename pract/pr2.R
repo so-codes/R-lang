@@ -7,6 +7,9 @@ m1
 m2 <- matrix(c(12:20),nrow = 3, ncol = 3, byrow = FALSE)
 m2
 
+m3 <- matrix(c(1:6), nrow = 2, ncol = 2, byrow = TRUE)
+m3
+
 # practical 3
 
 # pr 3 -1
@@ -39,6 +42,7 @@ t(m2+m1)
 
 # pr 7
 v4 <- 4*m1*m2
+v4
 print(v4[3,2])
 
 # pr 8
