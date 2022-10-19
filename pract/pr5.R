@@ -37,11 +37,12 @@ hist(df1$price,main = "PRODUCTS",xlab = "Price",ylab = "Products",col = "purple"
 
 #Q3_1
 #1
-df2<- read.csv("team1.txt",sep = "|")
+df2<- read.csv(file.choose(),sep = "|")
 View(df2)
 
 #2
 structure(df2)
+df2
 summary(df2)
 
 #3
@@ -55,7 +56,7 @@ j4<-quantile(df2$POINTS) #Quartile Deviation
 View(j4)
 
 #4
-hist(df2$POINTS,main = "TEAMS",xlab = "Team",ylab = "Assists",col = "green",border = "black")
+hist(mtcars$mpg,main = "TEAMS",xlab = "Team",ylab = "Assists",col = "green",border = "red")
 
 #_2
 mj<-c(3,5,7,9,11,13,15,17,19,21,23,25,27)

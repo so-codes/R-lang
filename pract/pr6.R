@@ -18,7 +18,7 @@ v <- c(88, 95, 92, 97, 96, 97, 94, 86, 91, 95, 97, 88, 85, 76, 68)
 
 # 4
 duration = faithful$eruptions     # eruption durations 
-moment(duration, order=3, center=TRUE)
+moment(duration, order=0, center=TRUE)
 print(skewness(duration))
 print(kurtosis(duration))
 

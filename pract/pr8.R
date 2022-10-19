@@ -17,6 +17,8 @@ boxplot(cig)
 plot(cig, lon)
 scatter.smooth(cig, lon)
 
+scatter.smooth(mtcars$mpg, mtcars$cyl)
+
 # 1. 6
 model <- lm(lon ~ cig)
 print(model)
@@ -48,7 +50,7 @@ summary(model)
 model <- lm(h ~ w)
 
 z <- data.frame(h = 170)
-result <-  predict(model,z)
+result <- predict(model,z)
 print(result)
 
 # Question 3

@@ -4,7 +4,8 @@ m1 <- matrix(v1 ,nrow = 3, ncol = 2, byrow = TRUE)
 m1
 
 # practical 2
-m2 <- matrix(c(12:20),nrow = 3, ncol = 3, byrow = FALSE)
+ra <- c(12:20)
+m2 <- matrix(ra,nrow = 3, ncol = 3, byrow = TRUE)
 m2
 
 m3 <- matrix(c(1:6), nrow = 2, ncol = 2, byrow = TRUE)
@@ -15,8 +16,12 @@ m3
 # pr 3 -1
 v2 <- c(1,3,5,7,9,11,13,15,17)
 m1 <- matrix(v2 ,nrow = 3, ncol = 3, byrow = TRUE) 
+m1
+
 m1 + m2
 m1 - m2
+
+m1 / m2
 
 # pr 3 - 2
 m1 * m2
@@ -29,13 +34,14 @@ t(m1)
 
 # pr 3 - 5
 diag(m2)
-
+diag(c(1,2,3,4,5))
 # pr 4
 m2[3,]
 
 #pr 5
 v3 <- m1 - 2*m2
-print(v3[,2])
+v3
+v3[,2]
 
 # pr 6
 t(m2+m1)

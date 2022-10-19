@@ -14,17 +14,18 @@ res1 <- a|b & c
 res1
 
 #d. disp result of a |b |(! c)
-res2 <-a|b|(!c)
+res2 <- a|b|!c
 res2
 
 #e. disp result of a + b & c == true
-res3 <- a+b&c ==TRUE
+res3 <- a + b & c == TRUE
 res3
 
 #2. create vectors as follows :
 
 # a. m of 5 numbers
 m <- c(1,2,3,4,5)
+print(m)
 
 #b. n of 5 decimals
 n <- c(1.1,6.9,5.6,4.5,3.3)
@@ -39,7 +40,8 @@ s <- c(TRUE,FALSE)
 t <-c(3,4,5,6,7,8,9,10)
 
 #f. disp 2m+3n, m -n, 3m/2, m^n, mxt,m%t,mxn
-disp1<-2*m+3*n
+disp1 <- 2 * m + 3 * n
+disp1
 disp2<-m - n
 disp3<-3*m/2
 disp4<-m^n
@@ -49,9 +51,9 @@ disp6
 disp7<-m*n
 
 #g. Disp result of m<n, m==n, m&n, m|n
-di1<-m<n
+di1 <- m<n
 di1
-di2<-m==n
+di2 <- m == n
 di2
 di3<-m&n
 di3
