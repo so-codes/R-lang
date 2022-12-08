@@ -19,8 +19,8 @@ median.result3 <- median(w3)
 print(median.result3)
 
 Mode(w1)
-mode(w2)
-mode(w3)
+Mode(w2)
+Mode(w3)
 
 # pr 2
 er <- faithful$eruptions
@@ -28,7 +28,7 @@ er
 # 1
 mean(er)
 median(er)
-mode(er)
+Mode(er)
 
 # 2
 boxplot(er)
@@ -41,9 +41,10 @@ quantile(er,c(.37,.56,.78))
 wt <- mtcars
 
 # 1
+install.packages("DescTools")
 mean(mtcars$wt)
 median(mtcars$wt)
-mode(mtcars$wt)
+Mode(mtcars$wt)
 
 # 2
 quantile(mtcars$wt,probs=seq(.1,.9,by=.1))
